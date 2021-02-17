@@ -29,7 +29,7 @@ git commit -m "Describe mo kung ano ginawa mo"
 git push -u origin main
 ```
 
-3. Go to your talaarawan repository
+3. Go to YOUR PUP-SIPortal repository
 
 4. Click pull request
 ![pull request](https://github.com/glendell03/talaarawan/blob/main/pull-request.png)
@@ -46,7 +46,7 @@ origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
 ```
 1. **Add a new remote upstream repository**
 ```
-git remote add upstream https://github.com/ALT-FOUR/talaarawan.git
+git remote add upstream https://github.com/ravenlntn/PUP-SIPortal
 ```
 - You can now see both the original repository and the fork
 ```
