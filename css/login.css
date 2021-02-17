@@ -5,15 +5,14 @@
 }
 
 body {
-    font-family: 'Jura', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .container {
-    width: 110vw;
+    width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 7rem;
     padding: 0 2rem;
 }
 
@@ -24,12 +23,13 @@ body {
 }
 
 .img img {
-    width: 650px;
+    width: 800px;
 }
 
 .login-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -42,7 +42,7 @@ form {
 }
 
 form h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     margin: 15px 0;
     color: #333;
@@ -133,7 +133,7 @@ form h2 {
     background: none;
     padding: 0.5rem 0.7rem;
     font-size: 1.2rem;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: #555;
 }
 
@@ -164,7 +164,7 @@ a:hover {
     cursor: pointer;
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight:700;
     background-size: 200%;
     transition: .5s;
