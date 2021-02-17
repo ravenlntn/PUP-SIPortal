@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Jura', sans-serif;
 }
 
 .container {
@@ -133,7 +133,7 @@ form h2 {
     background: none;
     padding: 0.5rem 0.7rem;
     font-size: 1.2rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Jura', sans-serif;
     color: #555;
 }
 
@@ -164,7 +164,7 @@ a:hover {
     cursor: pointer;
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Jura', sans-serif;
     font-weight:700;
     background-size: 200%;
     transition: .5s;
