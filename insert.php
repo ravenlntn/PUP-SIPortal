@@ -1,8 +1,6 @@
 <?php 
 include('dbconnect.php');
 
-
-
 $studno = " ";
 $name = " "; 
 $webmail = " ";
