@@ -2,7 +2,7 @@
 ## Building from Source 🏗️
 1. **Fork the repository**
 
-- Then go to your repository and find PUP-SIPortal
+- THEN GO TO "YOUR" repository and find PUP-SIPortal
 
 2. **Clone the repository**
 
