@@ -1,5 +1,5 @@
 <?php
-$db = new mysqli("localhost","root"," ","pupsiportal");
+$db = new mysqli("localhost","root","","pupsiportal");
 
 // Check connection
 if ($db -> connect_errno) {

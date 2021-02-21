@@ -184,7 +184,7 @@ td::before {
     width: 20em;
 }
 
-.search input[type="text"] {
+.search input[type="search"] {
     width: 100%;
     padding: 0.25em;
     padding-right: 10px;
@@ -195,6 +195,8 @@ td::before {
     font-size: 15px;
     color: #91091e;
 }
+
+
 
 ::-webkit-input-placeholder {
     color: #8d777a;
@@ -331,7 +333,7 @@ td::before {
 
 /*RESPONSIVE FIRST CONTAINER*/
 
-@media screen and (max-width:400px) {
+@media screen and (min-width:680px) {
     .first-container .form .input_field {
         flex-direction: column;
         align-items: flex-start;
