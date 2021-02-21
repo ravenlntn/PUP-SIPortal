@@ -4,9 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="icon" href="img/avatar.svg">
+    <title>Admin Portal</title>
 </head>
 <body>
+    <div class="full-container"><!--COLUMNS -->
+        <div class="logo">
+            <img src="img/logo.svg">
+        </div>    
+        <div class="first-container"> <!-- DESIGN 1ST COLUMN -->
+            <div class="title">Form Data</div>
+            <form method="post"  action="server.php" class="form" enctype="multipart/form-data">
+                <div class="input_field">
+                    <label>Student Number</label>
+                    <input type="text" class="input">
+                </div>
+                <div class="input_field">
+                    <label>Full Name</label>
+                    <input type="text" class="input">
+                </div>
+                <div class="input_field">
+                    <label>Webmail</label>
+                    <input type="email" class="input">
+                </div>
+                <div class="input_field">
+                    <label>Contact Number</label>
+                    <input type="text" class="input">
+                </div>
+                <div class="input_field">
+                    <label>Mode of Learning</label>
+                    <div class="custom_select">
+                        <select>
+                            <option value="Online">Online</option>
+                            <option value="Corres">Correspondence</option>
+                        </select>
+                    </div>                    
+                </div>
+                <div class="input_field">
+                    <label>Scholastic Status</label>
+                    <div class="custom_select">
+                        <select>
+                            <option value="Regular">Regular</option>
+                            <option value="Irreg">Irregular</option>
+                        </select>
+                    </div>                    
+                </div>
+                <div class="third">
+                    <div class="input_field">
+                        <input type="submit" value="Save" class="btn">
+                    </div>
+                    <div class="input_field">
+                        <input type="submit" value="Update" class="btn">
+                    </div> 
+                </div>        
+          </form>
+        </div>
+
+        <div class="second-container"><!-- DESIGN 2nd COLUMN -->
+            <div class="search">
+                <input type="text" placeholder="Find student's data">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="table-wrapper"a>
+                <table id="filterTable">
+                    <thead>
+                    <tr>
+                        <th data-type="text">Student Number</th>
+                        <th data-type="text">Name</th>
+                        <th data-type="text">Webmail</th>
+                        <th data-type="text">Contact Number</th>
+                        <th data-type="text">Mode of Learning</th>
+                        <th data-type="text">Scholastic Status</th>
+                        <th data-type="text"></th>
+                        <th data-type="text"></th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>2019-15174-MN-0</td>
+                            <td>LANTIN, RAVEN GIANE DC.</td>
+                            <td>rgdlantin@iskolarngbayan.pup.edu.ph</td>
+                            <td>09475866997</td>
+                            <td>Online</td>
+                            <td>Regular</td>
+                            <td>
+                                <a class="button" href="#"">Edit</a>
+                            </td>
+                            <td>
+                                <a class="button" href="#">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2019-15174-MN-0</td>
+                            <td>LANTIN, RAVEN GIANE DELA CRUZ DC</td>
+                            <td>rgdlantin@iskolarngbayan.pup.edu.ph</td>
+                            <td>09475866997</td>
+                            <td>Online</td>
+                            <td>Regular</td>
+                            <td>
+                                <a class="button" href="#"">Edit</a>
+                            </td>
+                            <td>
+                                <a class="button" href="#">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2019-15174-MN-0</td>
+                            <td>LANTIN, RAVEN GIANE DELA CRUZ RAVEN GIANE</td>
+                            <td>rgdlantin@iskolarngbayan.pup.edu.ph</td>
+                            <td>09475866997</td>
+                            <td>Online</td>
+                            <td>Regular</td>
+                            <td>
+                                <a class="button" href="#"">Edit</a>
+                            </td>
+                            <td>
+                                <a class="button" href="#">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
     
+    <a class="s-out" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Logout
+    </a>
 </body>
 </html>

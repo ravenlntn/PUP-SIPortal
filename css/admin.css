@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+}
+
+.full-container {
+    display: flex; 
+}
+
+.logo {
+    position: absolute;
+    margin: 20px;  
+}
+
+/*FIRST CONTAINER */
+
+.first-container {
+    max-width: 500px;
+    width: 100%;
+    background: #fdf1d6;
+    margin-top: 150px;
+    margin-left: 30px;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+    border-radius: 10px;
+}
+
+.first-container .title {
+    font-size: 24px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.first-container .form {
+    width: 100%;
+}
+
+.first-container .form .input_field {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.first-container .form .input_field label {
+    width: 200px;
+    font-weight: 500;
+    color: #9b2430;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.first-container .form .input_field .input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.first-container .form .input_field .custom_select {
+    position: relative;
+    width: 100%;
+    height: 36px;
+    color: #333;
+}
+
+.first-container .form .input_field select {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    color: #333;
+    border-radius: 5px;
+    outline: none;
+}
+
+.first-container .form .input_field .custom_select::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #9b2430b2 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.first-container .form .input_field .input:focus, 
+.first-container .form .input_field select:focus {
+    border: 2px solid #c39e5c;
+}
+
+.third {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.first-container .form .input_field .btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 0;
+    background: #cb9975;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.first-container .form .input_field .btn:hover {
+    background: #c39e5c;
+}
+
+/*SECOND CONTAINER*/
+
+.second-container {
+    display:flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+    margin-top: 94px;
+
+}
+
+.table-wrapper {
+    overflow: auto;
+    max-width: 100%;
+    background-color: #c39e5c;
+    border-radius: 3px;
+}
+
+tr {
+    border-bottom: 1px solid;
+    font-size: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+th {
+    background-color: #9b2430e8;
+    color: #fff;
+    cursor: default;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+th, td {
+    text-align: center;
+    padding: 0.8em 1em;
+    white-space: nowrap;
+}
+
+td::before {
+    display: none;
+}
+
+.search {
+    margin-bottom: 1em;
+    position: relative;
+    width: 20em;
+}
+
+.search input[type="text"] {
+    width: 100%;
+    padding: 0.25em;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.349);
+    border: 2px solid #cb997e;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #91091e;
+}
+
+::-webkit-input-placeholder {
+    color: #8d777a;
+}
+
+.fa-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    color: #555;
+    font-size: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*SIGNOUT BUTTON */
+
+.s-out {
+    position: absolute;
+    bottom: 85%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    color: #91091e;
+    padding: 15px 15px;
+    font-size:15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.s-out:hover {
+    background: #cb997e;
+    color: #fff;
+    transition: .5s;
+}
+
+.s-out::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.s-out span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #91091e, #c39e5c );
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+
+}
+
+.s-out span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #91091e, #c39e5c);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+
+}
+
+.s-out span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #91091e, #c39e5c);
+    animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+.s-out span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #91091e, #c39e5c);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+
+}
+
+
+/*RESPONSIVE FIRST CONTAINER*/
+
+@media screen and (max-width:400px) {
+    .first-container .form .input_field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .first-container .form .input_field label {
+        margin-bottom: 5px;
+    }
+}

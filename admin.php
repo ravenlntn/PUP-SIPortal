@@ -8,37 +8,37 @@
     <title>Admin Portal</title>
 </head>
 <body>
-    <div class=""><!--COLUMNS -->
-        <div class=""> <!-- DESIGN 1ST COLUMN -->
+    <div class="full-container"><!--COLUMNS -->
+    
+        <div class="first-container"> <!-- DESIGN 1ST COLUMN -->
             <form method="post"  action="server.php" class="" enctype="multipart/form-data">
-                <input type="hidden" name="id"  value="<?php echo $id;?>" >		
-                <input type="text"   name="studno"       placeholder="STUD NO "     value="<?php echo $studno;?>" required/>
-                <input type="text"   name="name" placeholder="NAME" value="<?php echo $name;?>" required/>
-                <input type="text"   name="webmail"    placeholder="WEBMAIL"    value="<?php echo $webmail;?>" required/>
-                <input type="number" name="contact"     placeholder="CONTACT NO#"     value="<?php echo $contact;?>" required/>
-                <input type="text"   name="modeoflearn"   placeholder="MODE OF LEARNING"   value="<?php echo $modeoflearn;?>" required/>
-                <input type="text"   name="scholastic"   placeholder="SCHOLASTIC STATUS"   value="<?php echo $scholastic;?>" required/>  
+                <input type="hidden" name="id"  value="<?php echo $id;?>">		
+                <input type="text" name="studno" placeholder="Student Number" value="<?php echo $studno;?>" required/>
+                <input type="text" name="name" placeholder="Full Name" value="<?php echo $name;?>" required/>
+                <input type="text" name="webmail" placeholder="Webmail" value="<?php echo $webmail;?>" required/>
+                <input type="text" name="contact" placeholder="Contact Number" value="<?php echo $contact;?>" required/>
+                <input type="radio"   name="modeoflearn"   placeholder="Mode of Learning" value="<?php echo $modeoflearn;?>" required/>
+                <input type="radio"   name="scholastic"   placeholder="Scholastic Status" value="<?php echo $scholastic;?>" required/>  
                 <?php if($edit==false):?>
-                 <input type="submit" name="save" value="save" id="save"  autocomplete="off"/>
+                 <input type="submit" name="save" value="Save" class="save"  autocomplete="off"/>
         
                 <?php else:?>
-                  <input type="submit" name="update" value="save"  id="save"   autocomplete="off"/>
+                  <input type="submit" name="update" value="Update"  class="save"   autocomplete="off"/>
                 <?php endif ?>
         
           </form>
         </div>
 
-            <div class=""><!-- DESIGN 2nd COLUMN -->
+            <div class="second-container"><!-- DESIGN 2nd COLUMN -->
                 <table class="container" >
                   <thead>
                     <tr>
-                        <th><h1>ID</h1></th>
-                        <th><h1>STUDENT #</h1></th>
-                        <th><h1>NAME</h1></th>
-                        <th><h1>WEBMAIL</h1></th>
-                        <th><h1>CONTACT #</h1></th>
-                        <th><h1>MODE OF LEARNING </h1></th>
-                        <th><h1>SCHOLASTIC STATUS</h1></th>
+                        <th>Student Number</th>
+                        <th>Name</th>
+                        <th>Webmail</th>
+                        <th>Contact Number</th>
+                        <th>Mode of Learning</th>
+                        <th>Scholastic Status</th>
                     </tr>
                  </thead>
 <tbody>
@@ -55,10 +55,10 @@ $result=mysqli_query($db, "SELECT * FROM info order by id desc");
     <td><?php echo $row["modeoflearn"];?></td>
     <td><?php echo $row["scholastic"];?></td>
     <td>
-        <a class=""  href="admin.php?edit=<?php echo $row['id']; ?>">Edit</a>
+        <a class="button"  href="admin.php?edit=<?php echo $row['id']; ?>">Edit</a>
     </td>
     <td>
-         <a class="" name="del" href="server.php?del=<?php echo $row['id']; ?>">Delete</a>
+         <a class="button" name="del" href="server.php?del=<?php echo $row['id']; ?>">Delete</a>
     </td>
 </tr>
 
