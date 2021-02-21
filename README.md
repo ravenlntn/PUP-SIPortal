@@ -7,7 +7,7 @@
 2. **Clone the repository**
 
 ```bash
-git clone https://github.com/username/PUP-SIPortal
+git clone https://github.com/YOUR_USERNAME/PUP-SIPortal
 ```
 
 ## Push your code 
