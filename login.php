@@ -1,3 +1,28 @@
+
+
+<?php session_start(); /* Starts the session */
+/* Check Login form submitted */if(isset($_POST['Submit'])){
+/* Define username and associated password array */
+$logins = array('admin'  =>'123456','admin@pup.edu.ph' => '123456');
+
+/* Check and assign submitted Username and Password to new variable */
+$Username = isset($_POST['Username']) ? $_POST['Username'] : '';
+$Email = isset($_POST['Email']) ? $_POST['Email'] : '';
+$Password = isset($_POST['Password']) ? $_POST['Password'] : '';
+
+/* Check Username and Password existence in defined array */
+if (isset($logins[$Username]) && $logins[$Username] == $Password  && $logins[$Email] == $Password){
+/* Success: Set session variables and redirect to Protected page  */
+$_SESSION['UserData']['Username']=$logins[$Username];
+header("location:admin.php");
+exit;
+} else {
+/*Unsuccessful attempt: Set error message */$msg="<span style='color:red'>Invalid Login Details</span>";
+}
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,16 +42,18 @@
             <img src="img/image.svg">
         </div>
         <div class="login-container">
-            <form action="#">
+            <form action=" " method="post" name="Login_Form">
+           
                 <img class="avatar" src="img/avatar.svg">
-                <h2>WELCOME, ADMIN.</h2>
+                <h2>WELCOME,ADMIN</h2>
+               
                 <div class="input-div one">
                     <div class="i">
                         <i class="fas fa-user"></i>
                     </div>
                     <div>
                         <h5>Username</h5>
-                        <input class="input" type="text">
+                        <input class="input" type="text" name="Username" required>
                     </div>
                 </div>
                 <div class="input-div two">
@@ -35,7 +62,7 @@
                     </div>
                     <div>
                         <h5>Email</h5>
-                        <input class="input" type="email">
+                        <input class="input" type="email" name="Email" required>
                     </div>
                 </div>
                 <div class="input-div three">
@@ -44,10 +71,10 @@
                     </div>
                     <div>
                         <h5>Password</h5>
-                        <input class="input" type="password">
+                        <input class="input" type="password"  name="Password" required>
                     </div>
                 </div>
-                <input type="submit" class="btn" value="Login">
+                <input type="submit" class="btn" name="Submit" value="Login">
             </form>
         </div>
         <script type="text/javascript" src="js//main.js"></script>
