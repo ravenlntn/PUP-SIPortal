@@ -92,7 +92,7 @@ if(isset($_GET['edited'])){
        <form>
         <div class="second-container"><!-- DESIGN 2nd COLUMN -->
             <div class="search">
-                <input type="text" placeholder="Find student's data" name="SEARCH" id="search-input">
+                <input type="search" placeholder="Find student's data" name="SEARCH">
                     <i class="fas fa-search"></i>                
             </div>
 
@@ -146,13 +146,7 @@ if(isset($_GET['edited'])){
             </div>
         </div>
     </div>
-    <?php session_start(); /* Starts the session */
-if(!isset($_SESSION['UserData']['Username'])){
-header("location:login.php");
-exit;
-}
-?>
-
+    
     <a class="s-out" href="logout.php">
         <span></span>
         <span></span>
@@ -160,8 +154,7 @@ exit;
         <span></span>
         Logout
     </a>
-  ;
-?>
+ 
 </body>
 </html>
 
