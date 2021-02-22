@@ -93,18 +93,9 @@ if(isset($_GET['edited'])){
         <div class="second-container"><!-- DESIGN 2nd COLUMN -->
             <div class="search">
                 <input type="search" placeholder="Find student's data" name="SEARCH">
-                <i class="fas fa-search"></i>
+                    <i class="fas fa-search"></i>                
             </div>
         </form>
-
-            <?php
-            include("insert.php");
-            $search = $_REQUEST["SEARCH"];
-            $query = "SELECT * from information WHERE name like'%$search%' or studno like'%$search%'
-                       order by name";
-            $result = mysqli_query($db,$query);
-            if(mysqli_num_rows($result)>0){
-            ?>
             
             <div class="table-wrapper">
                 <table id="filterTable">
@@ -146,10 +137,7 @@ if(isset($_GET['edited'])){
                         </tr>
                         <?php 
                         }
-                     }
-                        else
-                        
-                        echo '<div style="color:red; text-align:center;">NO DATA EXIST</div>';
+                            
                      ?>
                     </tbody>
                     
