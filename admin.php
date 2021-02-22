@@ -145,14 +145,22 @@ if(isset($_GET['edited'])){
             </div>
         </div>
     </div>
-    
-    <a class="s-out" href="#">
+    <?php session_start(); /* Starts the session */
+if(!isset($_SESSION['UserData']['Username'])){
+header("location:login.php");
+exit;
+}
+?>
+
+    <a class="s-out" href="logout.php">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
         Logout
     </a>
+  ;
+?>
 </body>
 </html>
 
