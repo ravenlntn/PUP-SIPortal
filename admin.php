@@ -92,9 +92,10 @@ if(isset($_GET['edited'])){
        <form>
         <div class="second-container"><!-- DESIGN 2nd COLUMN -->
             <div class="search">
-                <input type="search" placeholder="Find student's data" name="SEARCH">
+                <input type="text" placeholder="Find student's data" name="SEARCH" id="search-input">
                     <i class="fas fa-search"></i>                
             </div>
+
         </form>
             
             <div class="table-wrapper">
@@ -122,12 +123,12 @@ if(isset($_GET['edited'])){
                         ?>
                             
                         <tr>
-                            <td><?php echo $row["studno"];?></td>
-                            <td><?php echo $row["name"];?></td>
-                            <td><?php echo $row["webmail"];?></td>
-                            <td><?php echo $row["contact"];?> </td>
-                            <td><?php echo $row["modeoflearn"];?></td>
-                            <td><?php echo $row["scholastic"];?></td>
+                            <td class="find"><?php echo $row["studno"];?></td>
+                            <td class="find"><?php echo $row["name"];?></td>
+                            <td class="find"><?php echo $row["webmail"];?></td>
+                            <td class="find"><?php echo $row["contact"];?> </td>
+                            <td class="find"><?php echo $row["modeoflearn"];?></td>
+                            <td class="find"><?php echo $row["scholastic"];?></td>
                             <td>
                                 <a class="button" name="edit" href="admin.php?edited=<?php echo $row['id']; ?>">Edit</a>
                             </td>
@@ -153,6 +154,7 @@ if(isset($_GET['edited'])){
         <span></span>
         Logout
     </a>
+    <script src="js/search.js"></script> 
 </body>
 </html>
 
