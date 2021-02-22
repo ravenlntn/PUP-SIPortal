@@ -1,3 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+}
+
+.parent-container {
+    max-width: 1900px;
+    width: 100%;
+    background: #f8f4ef;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 50px;
+}
+
+.table-wrapper {
+    margin-top: 20px;
+    background-color: #c39e5c;
+    font-size: 30px;
+    border-bottom: black;
+    border-radius: 5px;
+    align-items: center;
+}
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  table {
+    max-width: 100%;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #eee;
+  }
+  
+  th {
+    background-color: #9b2430;
+    color: #fff;
+  }
+  
+  th,
+  td {
+  border: 2px;
+  font-family:jura,sans-serif;
+    text-align: center;
+    padding: 0.8em 2em;
+  }
+  
+  td::before {
+    display: none;
+  }
+
+  tr:nth-child(even) {
+    background-color: #eee;
+
+  }
+
+
 *
 {
     outline: none;
