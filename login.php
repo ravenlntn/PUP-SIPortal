@@ -16,8 +16,7 @@ if (isset($logins[$Username]) && $logins[$Username] == $Password  && $logins[$Em
 $_SESSION['UserData']['Username']=$logins[$Username];
 header("location:admin.php");
 exit;
-} else {
-/*Unsuccessful attempt: Set error message */$msg="<span style='color:red'>Invalid Login Details</span>";
+
 }
 }
 ?>
