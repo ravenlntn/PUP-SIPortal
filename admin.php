@@ -127,7 +127,7 @@ if(isset($_GET['edited'])){
                         <tr id="result">
                             <td class="find"><?php echo $row["studno"];?></td>
                             <td class="find"><?php echo $row["name"];?></td>
-                            <td class="find"><?php echo $row["webmail"];?></td>
+                            <td class="webmail"><?php echo $row["webmail"];?></td>
                             <td class="find"><?php echo $row["contact"];?> </td>
                             <td class="find"><?php echo $row["modeoflearn"];?></td>
                             <td class="find"><?php echo $row["scholastic"];?></td>
@@ -159,4 +159,3 @@ if(isset($_GET['edited'])){
  
 </body>
 </html>
-

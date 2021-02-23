@@ -1,3 +1,22 @@
+# INSTRUCTIONs
+# FOR ADMIN ----------->>>>>   USERNAME : admin   == EMAIL : admin@pup.edu.ph == PASSWORD : 123456 
+
+# CREATE DATABASE NAME = 'pupsiportal'
+
+# FOR TABLE IMPORT THE FILE INFORMATION.SQL   
+
+
+
+
+
+
+
+
+
+
+
+
+
 # PUP-SIPortal
 ## Building from Source 🏗️
 1. **Fork the repository**

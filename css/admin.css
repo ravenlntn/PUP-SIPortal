@@ -153,6 +153,10 @@ tr {
     text-transform: uppercase;
 }
 
+.webmail {
+    text-transform: lowercase;
+}
+
 tr:nth-child(odd) {
     background-color: #eee;
 }
