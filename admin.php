@@ -88,11 +88,24 @@ if(isset($_GET['edited'])){
                 </div>        
           </form>
         </div>
+                        <?php 
+                        $connection = mysqli_connect('localhost','root','','pupsiportal');
+                        if(isset($_POST['search'])){
+                            $searchkey = $_POST['search'];
+                            $sql = "SELECT * FROM information WHERE name LIKE '%searchkey%''";
 
-       <form>
+                        }
+                        else {
+                            $sql = "SELECT * FROM information";
+                            $searchkey = " ";
+                          
+                        }
+                        $results = mysqli_query($connection,$sql);
+                        ?>
+       <form method="POST" action="">
         <div class="second-container"><!-- DESIGN 2nd COLUMN -->
             <div class="search">
-                <input type="search" placeholder="Find student's data" name="SEARCH">
+                <input type="search" placeholder="Find student's data" name="search">
                     <i class="fas fa-search"></i>                
             </div>
         </form>
@@ -115,9 +128,9 @@ if(isset($_GET['edited'])){
                     <tbody>
                         <?php 
 
-                        $result=mysqli_query($db, "SELECT * FROM information order by id desc");
+                      //  $result=mysqli_query($db, "SELECT * FROM information order by id desc");
                     
-                        while($row=mysqli_fetch_array($result)) {  
+                        while($row=mysqli_fetch_assoc($results)) {  
                         
                         ?>
                             
@@ -145,12 +158,7 @@ if(isset($_GET['edited'])){
             </div>
         </div>
     </div>
-    <?php session_start(); /* Starts the session */
-if(!isset($_SESSION['UserData']['Username'])){
-header("location:login.php");
-exit;
-}
-?>
+    
 
     <a class="s-out" href="logout.php">
         <span></span>
@@ -159,8 +167,7 @@ exit;
         <span></span>
         Logout
     </a>
-  ;
-?>
+ 
 </body>
 </html>
 
