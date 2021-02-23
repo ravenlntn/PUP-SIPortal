@@ -211,6 +211,10 @@ td::before {
     font-size: 15px;
 }
 
+.hidden {
+    display: none;
+}
+
 
 
 /*SIGNOUT BUTTON */
