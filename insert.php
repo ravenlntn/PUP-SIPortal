@@ -29,28 +29,28 @@ if (isset($_POST['submit'])) {
              VALUES ('$studno','$name','$webmail','$contact','$modeoflearn','$scholastic')";
 
     mysqli_query($db, $query);
-    header("location: admin.php"); //redirect to admin page after inserting
+    header("location: admin.php"); 
 
 }
 
 if (isset($_POST['update'])) {
-    //we put strtoupper to convert string to uppercase
+
     $studno = ($_POST['studno']);
     $name = ($_POST['name']);
     $webmail = ($_POST['webmail']);
     $contact = ($_POST['contact']);
     $modeoflearn = ($_POST['modeoflearn']);
     $scholastic = ($_POST['scholastic']);
-    
+
     $id = ($_POST['id']);
-    
+
     $query = " UPDATE information SET studno ='$studno',name = '$name', webmail= '$webmail', 
                 contact = '$contact', modeoflearn = '$modeoflearn',scholastic = '$scholastic' WHERE id='$id'";
             
   
     mysqli_query($db, $query);
     $result=mysqli_query($db, "SELECT * FROM information order by id desc");
-    header("location: admin.php"); //redirect to admin page after inserting
+    header("location: admin.php"); 
 
 }   
 
@@ -58,9 +58,9 @@ if (isset($_POST['update'])) {
 if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
     $result=mysqli_query($db, "DELETE FROM  information WHERE id=$id");
-    header("location: admin.php"); //redirect to admin page after inserting
+    header("location: admin.php"); 
 }
-        // retrieve record
+      
     $result=mysqli_query($db, "SELECT * FROM information order by id desc");
 
 

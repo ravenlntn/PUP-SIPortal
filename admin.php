@@ -28,7 +28,9 @@ if(isset($_GET['edited'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/admin.css">
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="icon" href="img/avatar.svg">
+    <script src="./js/search.js"></script>
     <title>Admin Portal</title>
 </head>
 <body>
@@ -88,26 +90,14 @@ if(isset($_GET['edited'])){
                 </div>        
           </form>
         </div>
-                        <?php 
-                        $connection = mysqli_connect('localhost','root','','pupsiportal');
-                        if(isset($_POST['search'])){
-                            $searchkey = $_POST['search'];
-                            $sql = "SELECT * FROM information WHERE name LIKE '%searchkey%''";
 
-                        }
-                        else {
-                            $sql = "SELECT * FROM information";
-                            $searchkey = " ";
-                          
-                        }
-                        $results = mysqli_query($connection,$sql);
-                        ?>
-       <form method="POST" action="">
+       <form>
         <div class="second-container"><!-- DESIGN 2nd COLUMN -->
             <div class="search">
-                <input type="search" placeholder="Find student's data" name="search">
+                <input type="search" placeholder="Find student's data" name="SEARCH" id="searchInput">
                     <i class="fas fa-search"></i>                
             </div>
+
         </form>
             
             <div class="table-wrapper">
@@ -128,19 +118,19 @@ if(isset($_GET['edited'])){
                     <tbody>
                         <?php 
 
-                      //  $result=mysqli_query($db, "SELECT * FROM information order by id desc");
+                        $result=mysqli_query($db, "SELECT * FROM information order by id desc");
                     
-                        while($row=mysqli_fetch_assoc($results)) {  
+                        while($row=mysqli_fetch_array($result)) {  
                         
                         ?>
                             
-                        <tr>
-                            <td><?php echo $row["studno"];?></td>
-                            <td><?php echo $row["name"];?></td>
-                            <td><?php echo $row["webmail"];?></td>
-                            <td><?php echo $row["contact"];?> </td>
-                            <td><?php echo $row["modeoflearn"];?></td>
-                            <td><?php echo $row["scholastic"];?></td>
+                        <tr id="result">
+                            <td class="find"><?php echo $row["studno"];?></td>
+                            <td class="find"><?php echo $row["name"];?></td>
+                            <td class="find"><?php echo $row["webmail"];?></td>
+                            <td class="find"><?php echo $row["contact"];?> </td>
+                            <td class="find"><?php echo $row["modeoflearn"];?></td>
+                            <td class="find"><?php echo $row["scholastic"];?></td>
                             <td>
                                 <a class="button" name="edit" href="admin.php?edited=<?php echo $row['id']; ?>">Edit</a>
                             </td>
@@ -159,7 +149,6 @@ if(isset($_GET['edited'])){
         </div>
     </div>
     
-
     <a class="s-out" href="logout.php">
         <span></span>
         <span></span>
@@ -170,4 +159,3 @@ if(isset($_GET['edited'])){
  
 </body>
 </html>
-
