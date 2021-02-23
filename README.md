@@ -22,6 +22,6 @@ FOR TABLE IMPORT THE FILE INFORMATION.SQL
 
 #### FOR CLIENT-BASED: ENTER http://localhost/PUP%20SIPortal/index.php
 
-## NOTE
+## Note:
 
 **This system still lacks of content and need room for further improvements.**
