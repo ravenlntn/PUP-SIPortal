@@ -1,23 +1,26 @@
-# INSTRUCTIONs
-# FOR ADMIN ----------->>>>>   USERNAME : admin   == EMAIL : admin@pup.edu.ph == PASSWORD : 123456 
+## INSTRUCTIONs
 
-# CREATE DATABASE NAME = 'pupsiportal'
+```
+CREATE DATABASE NAME = 'pupsiportal'
 
-# FOR TABLE IMPORT THE FILE INFORMATION.SQL   
+# FOR TABLE IMPORT THE FILE INFORMATION.SQL 
 
+```
 
+### FOR ADMIN-BASED: ENTER http://localhost/pup%20SIPortal/login.php
+```
+ USERNAME : admin == EMAIL : admin@pup.edu.ph == PASSWORD : 123456 
+```
 
-
-
-
-
-
-
-
-
+### FOR CLIENT-BASED: ENTER http://localhost/PUP%20SIPortal/index.php
 
 
 # PUP-SIPortal
+
+It is a Student Information Portal for professors and class president. 
+A beta system for our finals exam in Web Programming using PHP DataBase. 
+
+
 ## Building from Source 🏗️
 1. **Fork the repository**
 
