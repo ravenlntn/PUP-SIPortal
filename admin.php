@@ -3,7 +3,7 @@ include("insert.php");
 if(isset($_GET['edited'])){
   $id=$_GET['edited'];
   $edit= true;
-  $result = mysqli_query($db, "SELECT * FROM information order by id desc");
+  $result = mysqli_query($db, "SELECT * FROM information WHERE id=$id ");
   $record=mysqli_fetch_array($result);
  
   $studno = $record['studno'];
