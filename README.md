@@ -1,6 +1,9 @@
 # PUP-SIPortal
 
-PUP-SIPortal provides students information made for our professors and class president, it is beta system for our finals exam in Web Programming using PHP DataBase. This system works wherein professors won't have a hard time searching for student's data by messaging the class president or searching through their documents. 
+PUP-SIPortal provides students information made for our professors and class president, it is beta system for our finals exam in Web Programming using PHP DataBase. This system works wherein professors won't have a hard time searching for student's data by messaging the class president or searching through their documents. This system works in two ways: 
+
+1. The ADMIN Server: either the class president or assigned admin would provide the students' information by updating, deleting and creating. 
+2. The CLIENT Server: the client only views the students' data for convenient purposes. 
 
 
 ### INSTRUCTIONs
