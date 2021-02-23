@@ -42,7 +42,7 @@ exit;
             <form action=" " method="post" name="Login_Form">
            
                 <img class="avatar" src="img/avatar.svg">
-                <h2>WELCOME,ADMIN</h2>
+                <h2>WELCOME, ADMIN</h2>
                
                 <div class="input-div one">
                     <div class="i">
