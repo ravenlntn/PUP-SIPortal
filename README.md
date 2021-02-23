@@ -15,12 +15,12 @@ CREATE DATABASE NAME = 'pupsiportal'
 FOR TABLE IMPORT THE FILE INFORMATION.SQL 
 ```
 
-#### FOR ADMIN-BASED: ENTER http://localhost/pup%20SIPortal/login.php
+#### **FOR ADMIN-BASED:** ENTER http://localhost/pup%20SIPortal/login.php
 ```
  USERNAME : admin == EMAIL : admin@pup.edu.ph == PASSWORD : 123456 
 ```
 
-#### FOR CLIENT-BASED: ENTER http://localhost/PUP%20SIPortal/index.php
+#### **FOR CLIENT-BASED:** ENTER http://localhost/PUP%20SIPortal/index.php
 
 ## Note:
 
