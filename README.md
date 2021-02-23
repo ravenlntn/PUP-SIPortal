@@ -7,13 +7,9 @@ PUP-SIPortal provides students information for our professors and class presiden
 
 ### INSTRUCTIONs
 
-```
-CREATE DATABASE NAME = 'pupsiportal'
-```
+- CREATE DATABASE NAME = 'pupsiportal'
 
-```
-FOR TABLE IMPORT THE FILE INFORMATION.SQL 
-```
+- FOR TABLE IMPORT THE FILE INFORMATION.SQL 
 
 #### FOR ADMIN-BASED: ENTER http://localhost/pup%20SIPortal/login.php
 ```
