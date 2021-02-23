@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap');
+
+body{
+  background-image: url('../img/PUP.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+display: flex;
+justify-content: center;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+table {
+  border-radius: 3px;
+max-width: 100%;
+background-color: rgba(51, 51, 51,0.4);
+}
+tr:nth-child(even) {
+  background-color: #5555;
+  color: #FFF;
+
+}
+tr:nth-child(odd) {
+  background-color: #5555;
+  color:#FFF;
+
+}
+
+
+th {
+    background-color: #9b2430;
+    color: #ffCC00;
+}
+
+th,
+td {
+border: 2px;
+font-family:jura,sans-serif;
+text-align: center;
+padding: 0.5em 1em;
+
+}
+
+td::before {
+  color:#ffCC00;
+  display: none;
+  }
+
+
+@media screen and (max-width: 680px) {
+table {
+  width: auto;
+border: 0;
+box-shadow: none;
+}
+
+thead {
+
+position: absolute;
+opacity: 0;
+}
+
+tbody {
+display: block;
+min-width: 19em;
+max-width: 25em;
+}
+
+tr {
+border-top: 2px solid #3c3c3b;
+border-bottom: 2px solid #3c3c3b;
+display: block;
+margin-bottom: 1em;
+}
+
+td {
+border-bottom: 1px solid #3c3c3b;
+display: flex;
+}
+
+td::before {
+display: inline-block;
+font-weight: bold;
+margin-right: auto;
+padding-right: 1em;
+}
+
+td:last-child {
+border-bottom: 0;
+}
+}
