@@ -1,4 +1,9 @@
-## INSTRUCTIONs
+# PUP-SIPortal
+
+PUP-SIPortal provides students information made for our professors and class president, it is beta system for our finals exam in Web Programming using PHP DataBase. This system works wherein professors won't have a hard time searching for student's data by messaging the class president or searching through their documents. 
+
+
+### INSTRUCTIONs
 
 ```
 CREATE DATABASE NAME = 'pupsiportal'
@@ -7,18 +12,12 @@ CREATE DATABASE NAME = 'pupsiportal'
 
 ```
 
-### FOR ADMIN-BASED: ENTER http://localhost/pup%20SIPortal/login.php
+#### FOR ADMIN-BASED: ENTER http://localhost/pup%20SIPortal/login.php
 ```
  USERNAME : admin == EMAIL : admin@pup.edu.ph == PASSWORD : 123456 
 ```
 
-### FOR CLIENT-BASED: ENTER http://localhost/PUP%20SIPortal/index.php
-
-
-# PUP-SIPortal
-
-It is a Student Information Portal for professors and class president. 
-A beta system for our finals exam in Web Programming using PHP DataBase. 
+#### FOR CLIENT-BASED: ENTER http://localhost/PUP%20SIPortal/index.php
 
 
 ## Building from Source 🏗️
